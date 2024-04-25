@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="start-page">
+      <h1>Welcome to Memory Quiz Game</h1>
+      <p>This quiz game is designed to train your memory. Before you start, please select the difficulty level.</p>
+      <select id="level-select">
+        <option value="easy">Easy</option>
+        <option value="moderate">Moderate</option>
+        <option value="very-hard">Very Hard</option>
+      </select>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+    <div id="quiz-page" style="display: none;">
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <p id="timer"></p>
+      <button id="next-btn" disabled>Next Question</button>
+      <button id="quit-btn">Quit Game</button>
+    </div>
+    <div id="result-page" style="display: none;">
+      <h2>Quiz Results</h2>
+      <p id="score"></p>
+      <button id="restart-btn">Restart Game</button>
+      <button id="share-btn">Share Game</button>
+      <button id="quit-btn-result">Quit Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
