@@ -10,63 +10,151 @@ const easyQuizData = [
     answer: "All of the above"
   },
   {
-    question: "Which of the following is not a characteristic of microinsurance?",
-    options: ["Low premiums", "Simple policy structure", "Large coverage amount", "Risk pooling"],
-    answer: "Large coverage amount"
-  },
-  {
-    question: "In microinsurance, what is the typical duration of coverage?",
-    options: ["5 years", "10 years", "1 year", "3 months"],
-    answer: "1 year"
+    question: "Who typically benefits from microinsurance?",
+    options: ["High-income individuals", "Middle-income individuals", "Low-income individuals", "Senior citizens"],
+    answer: "Low-income individuals"
   },
   {
     question: "What is the primary purpose of microinsurance?",
-    options: ["Generate profit for insurance companies", "Provide affordable insurance for low-income individuals", "Offer tax benefits to policyholders", "Cover high-value assets"],
-    answer: "Provide affordable insurance for low-income individuals"
+    options: ["To make profits for insurance companies", "To cover catastrophic losses", "To provide insurance for expensive items", "To protect low-income individuals"],
+    answer: "To protect low-income individuals"
   },
   {
-    question: "Which of the following is a microinsurance provider?",
-    options: ["A large multinational insurance company", "A local community cooperative", "Government insurance agency", "All of the above"],
+    question: "What does microinsurance help protect against?",
+    options: ["Natural disasters", "Loss of employment", "Illness and accidents", "All of the above"],
     answer: "All of the above"
   },
   {
-    question: "What is the main advantage of microinsurance?",
-    options: ["Complex policy structures", "High premiums", "Tailored to the needs of low-income individuals", "Exclusive to high-income individuals"],
-    answer: "Tailored to the needs of low-income individuals"
+    question: "Where is microinsurance most commonly found?",
+    options: ["Developed countries", "Rural areas", "Urban centers", "Industrialized nations"],
+    answer: "Rural areas"
   },
   {
-    question: "Which type of risk is commonly covered by microinsurance?",
-    options: ["Natural disasters", "Luxury item theft", "High-end medical procedures", "Travel insurance"],
-    answer: "Natural disasters"
+    question: "What is an important characteristic of microinsurance policies?",
+    options: ["They are expensive", "They have high coverage limits", "They are tailored to the needs of low-income individuals", "They are only available to the wealthy"],
+    answer: "They are tailored to the needs of low-income individuals"
   },
   {
-    question: "What is the role of microinsurance in poverty reduction?",
-    options: ["Increases poverty", "Has no impact on poverty", "Helps protect against financial shocks", "Leads to economic instability"],
-    answer: "Helps protect against financial shocks"
+    question: "Which organization is known for promoting microinsurance?",
+    options: ["World Bank", "International Monetary Fund", "World Health Organization", "United Nations"],
+    answer: "World Bank"
   },
   {
-    question: "What is the main challenge in promoting microinsurance?",
-    options: ["Lack of demand", "High premium costs", "Limited availability", "Overregulation"],
-    answer: "Limited availability"
+    question: "What is an example of a microinsurance model?",
+    options: ["Community-based insurance", "Corporate insurance", "Government-funded insurance", "Private insurance"],
+    answer: "Community-based insurance"
+  },
+  {
+    question: "What is an important benefit of microinsurance?",
+    options: ["It reduces poverty", "It only benefits the wealthy", "It is unaffordable for most people", "It covers rare events"],
+    answer: "It reduces poverty"
   }
 ];
 
 const moderateQuizData = [
   {
-    question: "What is the main challenge in implementing microinsurance in developing countries?",
-    options: ["Lack of awareness", "High administrative costs", "Lack of technology", "Regulatory constraints"],
-    answer: "Lack of awareness"
+    question: "What challenges does microinsurance face?",
+    options: ["Low awareness", "High costs", "Regulatory constraints", "All of the above"],
+    answer: "All of the above"
   },
-  // Add more moderate level questions here
+  {
+    question: "What is an example of a microinsurance product?",
+    options: ["Crop insurance", "Luxury car insurance", "Yacht insurance", "Private jet insurance"],
+    answer: "Crop insurance"
+  },
+  {
+    question: "What is an advantage of microinsurance?",
+    options: ["It provides coverage for low-value items", "It is inaccessible to most people", "It only covers rare events", "It promotes financial inclusion"],
+    answer: "It promotes financial inclusion"
+  },
+  {
+    question: "What is an example of a microinsurance scheme?",
+    options: ["Weather index insurance", "Multi-million dollar insurance", "Celebrity insurance", "Space travel insurance"],
+    answer: "Weather index insurance"
+  },
+  {
+    question: "Why is microinsurance important?",
+    options: ["It helps protect against financial risks", "It is only for the wealthy", "It is not widely available", "It only covers high-value items"],
+    answer: "It helps protect against financial risks"
+  },
+  {
+    question: "What role does microinsurance play in development?",
+    options: ["It promotes economic stability", "It is a luxury", "It is only for developed countries", "It is irrelevant"],
+    answer: "It promotes economic stability"
+  },
+  {
+    question: "What is a characteristic of microinsurance?",
+    options: ["It is affordable", "It is only for the wealthy", "It provides unlimited coverage", "It is limited to specific regions"],
+    answer: "It is affordable"
+  },
+  {
+    question: "What does microinsurance cover?",
+    options: ["Healthcare expenses", "Funeral costs", "Crop losses", "All of the above"],
+    answer: "All of the above"
+  },
+  {
+    question: "What is a common feature of microinsurance?",
+    options: ["Premiums are low", "Policies have high deductibles", "Coverage is limited", "Claims are rarely paid out"],
+    answer: "Premiums are low"
+  },
+  {
+    question: "What is a key goal of microinsurance?",
+    options: ["To provide financial protection", "To exclude low-income individuals", "To offer luxury services", "To maximize profits"],
+    answer: "To provide financial protection"
+  }
 ];
 
 const veryHardQuizData = [
   {
-    question: "Which organization first introduced the concept of microinsurance?",
-    options: ["World Health Organization", "United Nations", "World Bank", "International Monetary Fund"],
-    answer: "World Bank"
+    question: "What are the major barriers to microinsurance uptake?",
+    options: ["Low awareness", "High costs", "Regulatory issues", "All of the above"],
+    answer: "All of the above"
   },
-  // Add more very hard level questions here
+  {
+    question: "What is a significant challenge for microinsurance providers?",
+    options: ["Risk management", "Profit maximization", "Expanding coverage", "Low demand"],
+    answer: "Risk management"
+  },
+  {
+    question: "What is an example of a microinsurance program?",
+    options: ["Weather index insurance", "Private jet insurance", "Celebrity insurance", "Space travel insurance"],
+    answer: "Weather index insurance"
+  },
+  {
+    question: "What is a common feature of microinsurance schemes?",
+    options: ["Affordability", "Exclusivity", "Complexity", "Limited coverage"],
+    answer: "Affordability"
+  },
+  {
+    question: "What role does microinsurance play in poverty reduction?",
+    options: ["It helps protect assets", "It targets high-income individuals", "It increases inequality", "It promotes financial exclusion"],
+    answer: "It helps protect assets"
+  },
+  {
+    question: "What is a challenge for microinsurance distribution?",
+    options: ["Geographic barriers", "High premiums", "Exclusive eligibility criteria", "High claim rates"],
+    answer: "Geographic barriers"
+  },
+  {
+    question: "What is an important consideration in microinsurance design?",
+    options: ["Simplicity", "Exclusivity", "High premiums", "Limited coverage"],
+    answer: "Simplicity"
+  },
+  {
+    question: "What is a key benefit of microinsurance?",
+    options: ["Financial protection", "Exclusivity", "Complexity", "Limited coverage"],
+    answer: "Financial protection"
+  },
+  {
+    question: "What is an example of a microinsurance innovation?",
+    options: ["Mobile insurance", "Luxury insurance", "Yacht insurance", "Private jet insurance"],
+    answer: "Mobile insurance"
+  },
+  {
+    question: "What is a challenge for microinsurance sustainability?",
+    options: ["Low premium payments", "High claim rates", "Complexity", "Exclusivity"],
+    answer: "Low premium payments"
+  }
 ];
 
 // Fill easy level questions
@@ -179,4 +267,17 @@ function quitGame() {
   score = 0;
   startPage.style.display = "block";
   quizPage.style.display = "none";
-  resultPage.style
+  resultPage.style.display = "none";
+}
+
+function restartGame() {
+  currentQuestion = 0;
+  score = 0;
+  startPage.style.display = "block";
+  quizPage.style.display = "none";
+  resultPage.style.display = "none";
+}
+
+function shareGame() {
+  alert("Sharing the game...");
+}
