@@ -186,6 +186,7 @@ for (let i = veryHardQuizData.length; i < 10; i++) {
 
 let currentQuestion = 0;
 let score = 0;
+let timerInterval;
 let quizData = [];
 
 const startButton = document.getElementById("start-btn");
@@ -200,6 +201,7 @@ const quitButton = document.getElementById("quit-btn");
 const quitButtonResult = document.getElementById("quit-btn-result");
 const restartButton = document.getElementById("restart-btn");
 const shareButton = document.getElementById("share-btn");
+const timerElement = document.getElementById("timer");
 const scoreElement = document.getElementById("score");
 
 startButton.addEventListener("click", startQuiz);
@@ -279,5 +281,11 @@ function restartGame() {
 }
 
 function shareGame() {
+  // Add logic to share the game on social media platforms (e.g., WhatsApp, Facebook, Instagram, TikTok)
   alert("Sharing the game...");
+}
+
+// JavaScript for WhatsApp functionality
+function openWhatsAppChat() {
+  window.open("https://api.whatsapp.com/send?phone=255747619168&text=Hello%20from%20the%20Memory%20Test%20game!", "_blank");
 }
