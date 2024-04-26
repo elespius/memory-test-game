@@ -179,17 +179,4 @@ function quitGame() {
   score = 0;
   startPage.style.display = "block";
   quizPage.style.display = "none";
-  resultPage.style.display = "none";
-}
-
-function restartGame() {
-  currentQuestion = 0;
-  score = 0;
-  startPage.style.display = "block";
-  quizPage.style.display = "none";
-  resultPage.style.display = "none";
-}
-
-function shareGame() {
-  alert("Sharing the game...");
-}
+  resultPage.style
