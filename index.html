@@ -5,22 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Memory Test Game</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-PWxsggHP4jL29kFS9maQFZMugWd9zq8pPVST5Zd9lK3K/xCGJ9tcANw/ryFkJHJ/s6vOt3m/COyTevygATbR7g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-K7u8qVAkauSt29v+HHIZclV32aXR+l8o6TTFaKN2P0lC+UK8RCgH9ByKnQbScoru" crossorigin="anonymous">
 </head>
 <body>
   <div id="start-page">
-    <h1>Welcome to the Memory Test Game</h1>
-    <p>Choose your difficulty level:</p>
+    <h1>Memory Test Game</h1>
+    <p>Test your memory skills by answering the following questions about microinsurance.</p>
+    <label for="level-select">Choose difficulty level:</label>
     <select id="level-select">
       <option value="easy">Easy</option>
       <option value="moderate">Moderate</option>
       <option value="very-hard">Very Hard</option>
     </select>
     <button id="start-btn">Start Game</button>
+    <!-- WhatsApp Icon -->
+    <a href="#" onclick="openWhatsAppChat(); return false;"><i class="fab fa-whatsapp fa-2x"></i></a>
   </div>
 
   <div id="quiz-page" style="display: none;">
-    <!-- Quiz questions will be displayed here -->
+    <h2>Question <span id="question-number"></span></h2>
+    <p id="question"></p>
+    <div id="options"></div>
+    <button id="next-btn">Next</button>
+    <button id="quit-btn">Quit Game</button>
+    <p id="timer"></p>
   </div>
 
   <div id="result-page" style="display: none;">
@@ -28,22 +37,9 @@
     <p id="score"></p>
     <button id="restart-btn">Restart Game</button>
     <button id="quit-btn-result">Quit Game</button>
-    <a id="share-btn" href="https://wa.me/255747619168" class="whatsapp-icon" target="_blank"><i class="fab fa-whatsapp"></i> Share to WhatsApp</a>
+    <!-- WhatsApp Icon -->
+    <a href="#" onclick="openWhatsAppChat(); return false;"><i class="fab fa-whatsapp fa-2x"></i></a>
   </div>
-
-  <!-- Start of Tawk.to Script -->
-  <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/662b87541ec1082f04e75b64/1hsd0ha14';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-    })();
-  </script>
-  <!-- End of Tawk.to Script -->
 
   <script src="script.js"></script>
 </body>
