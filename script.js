@@ -98,7 +98,7 @@ for (let i = veryHardQuizData.length; i < 10; i++) {
 
 let currentQuestion = 0;
 let score = 0;
-let timerInterval = 15;
+let timerInterval;
 let quizData = [];
 
 const startButton = document.getElementById("start-btn");
@@ -125,17 +125,22 @@ shareButton.addEventListener("click", shareGame);
 
 function startQuiz() {
   const selectedLevel = levelSelect.value;
+  let timerDuration;
   if (selectedLevel === "easy") {
     quizData = easyQuizData;
+    timerDuration = 15; // Easy level timer duration
   } else if (selectedLevel === "moderate") {
     quizData = moderateQuizData;
+    timerDuration = 20; // Moderate level timer duration
   } else if (selectedLevel === "very-hard") {
     quizData = veryHardQuizData;
+    timerDuration = 30; // Very hard level timer duration
   }
   startPage.style.display = "none";
   quizPage.style.display = "block";
   resultPage.style.display = "none";
   loadQuestion();
+  startTimer(timerDuration); // Start timer with appropriate duration
 }
 
 function loadQuestion() {
@@ -151,11 +156,10 @@ function loadQuestion() {
     });
     optionsElement.appendChild(button);
   });
-  startTimer();
 }
 
-function startTimer() {
-  let secondsLeft = 15;
+function startTimer(duration) {
+  let secondsLeft = duration;
   updateTimer(secondsLeft);
   timerInterval = setInterval(() => {
     secondsLeft--;
