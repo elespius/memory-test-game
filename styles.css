@@ -1,52 +1,74 @@
-/* Styles for Memory Test Game */
+/* styles.css */
 
-/* Global styles */
 body {
   font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 h1 {
   text-align: center;
+  color: #333;
 }
 
-/* Start page styles */
+p {
+  color: #555;
+}
+
+select, button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
 #start-page {
   text-align: center;
-  padding: 20px;
 }
 
-#start-page select {
-  margin-bottom: 10px;
-}
-
-/* Quiz page styles */
-#quiz-page {
+#quiz-page, #result-page {
   display: none;
-  padding: 20px;
 }
 
 .option-btn {
   display: block;
   width: 100%;
+  margin-bottom: 10px;
   padding: 10px;
-  margin-top: 10px;
+  font-size: 16px;
+  text-align: left;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Result page styles */
-#result-page {
-  display: none;
+.option-btn:hover {
+  background-color: #f0f0f0;
+}
+
+#timer {
   text-align: center;
-  padding: 20px;
 }
 
-/* WhatsApp icon styles */
-.whatsapp-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 30px;
-  color: green;
-  text-decoration: none;
-}
