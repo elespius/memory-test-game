@@ -98,7 +98,6 @@ for (let i = veryHardQuizData.length; i < 10; i++) {
 
 let currentQuestion = 0;
 let score = 0;
-let timerInterval;
 let quizData = [];
 
 const startButton = document.getElementById("start-btn");
@@ -113,7 +112,6 @@ const quitButton = document.getElementById("quit-btn");
 const quitButtonResult = document.getElementById("quit-btn-result");
 const restartButton = document.getElementById("restart-btn");
 const shareButton = document.getElementById("share-btn");
-const timerElement = document.getElementById("timer");
 const scoreElement = document.getElementById("score");
 
 startButton.addEventListener("click", startQuiz);
@@ -125,22 +123,17 @@ shareButton.addEventListener("click", shareGame);
 
 function startQuiz() {
   const selectedLevel = levelSelect.value;
-  let timerDuration;
   if (selectedLevel === "easy") {
     quizData = easyQuizData;
-    timerDuration = 15; // Easy level timer duration
   } else if (selectedLevel === "moderate") {
     quizData = moderateQuizData;
-    timerDuration = 20; // Moderate level timer duration
   } else if (selectedLevel === "very-hard") {
     quizData = veryHardQuizData;
-    timerDuration = 30; // Very hard level timer duration
   }
   startPage.style.display = "none";
   quizPage.style.display = "block";
   resultPage.style.display = "none";
   loadQuestion();
-  startTimer(timerDuration); // Start timer with appropriate duration
 }
 
 function loadQuestion() {
@@ -156,23 +149,6 @@ function loadQuestion() {
     });
     optionsElement.appendChild(button);
   });
-}
-
-function startTimer(duration) {
-  let secondsLeft = duration;
-  updateTimer(secondsLeft);
-  timerInterval = setInterval(() => {
-    secondsLeft--;
-    updateTimer(secondsLeft);
-    if (secondsLeft === 0) {
-      clearInterval(timerInterval);
-      loadNextQuestion();
-    }
-  }, 1000);
-}
-
-function updateTimer(secondsLeft) {
-  timerElement.textContent = `Time Left: ${secondsLeft} seconds`;
 }
 
 function checkAnswer(selectedOption) {
@@ -193,25 +169,12 @@ function loadNextQuestion() {
 }
 
 function showResults() {
-  clearInterval(timerInterval);
   quizPage.style.display = "none";
   resultPage.style.display = "block";
   scoreElement.textContent = `Your score: ${score}/${quizData.length}`;
-  
-  const resultContainer = document.createElement("div");
-  resultContainer.classList.add("result-container");
-  
-  quizData.forEach((questionData, index) => {
-    const questionResult = document.createElement("p");
-    questionResult.textContent = `Question ${index + 1}: Correct answer - ${questionData.answer}`;
-    resultContainer.appendChild(questionResult);
-  });
-  
-  resultPage.appendChild(resultContainer);
 }
 
 function quitGame() {
-  clearInterval(timerInterval);
   currentQuestion = 0;
   score = 0;
   startPage.style.display = "block";
@@ -220,7 +183,6 @@ function quitGame() {
 }
 
 function restartGame() {
-  clearInterval(timerInterval);
   currentQuestion = 0;
   score = 0;
   startPage.style.display = "block";
@@ -229,6 +191,5 @@ function restartGame() {
 }
 
 function shareGame() {
-  // Add logic to share the game on social media platforms (e.g., WhatsApp, Facebook, Instagram, TikTok)
   alert("Sharing the game...");
 }
